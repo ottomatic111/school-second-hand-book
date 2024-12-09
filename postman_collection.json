@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "二手图书API测试",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "获取图书列表",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/ershoutushu/list",
+        "params": {
+          "page": "1",
+          "limit": "10"
+        }
+      }
+    },
+    {
+      "name": "添加图书",
+      "request": {
+        "method": "POST",
+        "url": "{{baseUrl}}/ershoutushu/save",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"tushumingcheng\":\"测试图书\"}"
+        }
+      }
+    }
+  ]
+} 
